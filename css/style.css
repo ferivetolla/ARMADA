@@ -1,0 +1,847 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+}
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+/*******************************  Header  *****************************/
+.topBox1 {
+	background-color: #65256f;
+	padding: 12px 0;
+}
+.topBox1 .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header1 {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 17px;
+	color: #ffb700;
+}
+.header2 {
+	display: flex;
+	align-items: center;
+}
+.header2 h3 {
+	color: #ffffff;
+	margin-right: 15px;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+}
+.header2 span {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 19px;
+	color: #fbc70e;
+}
+/******************************  logo  ******************************/
+.topBox2 {
+	margin: 8px 0;
+	font-size: 16px;
+	height: 62px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 0;
+}
+.topBox2 .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top-nav {
+	flex: 0 1 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu {
+	flex: 0 1 75%;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin-right: 5%;
+}
+.menu a:hover {
+	color: #65256f;
+	border-bottom: 2.5px solid #ffb700;
+}
+a {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 17px;
+	color: #2a2828;
+	text-decoration: none;
+}
+.downloadPrice {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 17px;
+	background: #65256f;
+	border: none;
+	border-radius: 3px;
+	padding: 8px 14px;
+	color: #fff;
+	width: 250px;
+	height: 43px;
+}
+/*********************  Наружняя реклама  ************************/
+.outerAdd {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background: url("../img/desctop-6/Rectangle\ 70.png") center / cover no-repeat;
+}
+.add1 {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 77px;
+	color: #fff;
+	position: relative;
+	margin-bottom: 4%;
+}
+.add1::after {
+	content: "";
+	width: 52px;
+	height: 4px;
+	background: #fff;
+	position: absolute;
+	bottom: -10%;
+	left: 0;
+}
+.add2 {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	color: #fff;
+}
+.subouterAdd {
+	background: rgba(0, 0, 0, 0.56);
+	width: 100%;
+	height: 100%;
+}
+.subouterAdd .container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.info {
+	flex: 0 1 60%;
+}
+.appliction {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	margin-top: 45px;
+	background: #ffc957;
+	border-radius: 3px;
+	padding: 2% 8%;
+}
+.social {
+	height: 50%;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+/*******************  Нашы услуги  ********************/
+.line {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 56px;
+	color: #000000;
+	position: relative;
+	text-align: center;
+	margin: 3% 0;
+}
+.line::before {
+	content: "";
+	width: 40%;
+	height: 2px;
+	background: #bebebe;
+	position: absolute;
+	bottom: 45%;
+	left: 0;
+}
+.line::after {
+	content: "";
+	width: 40%;
+	height: 2px;
+	background: #bebebe;
+	position: absolute;
+	bottom: 45%;
+	right: 0;
+}
+:where(.card, .f6card1) .container {
+	flex: 0 1 auto;
+	display: flex;
+	gap: 3%;
+	align-items: center;
+	text-align: center;
+}
+.subcard_img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 30vh;
+	padding: 10px;
+}
+.subcard_img img {
+	width: 100%;
+	margin-top: 20%;
+}
+.subcard {
+	height: 65vh;
+	background: #fff;
+}
+:where(.card, .f6card1) .container .subcard {
+	box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+}
+:where(.card, .f6card1) h4 {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #000;
+	height: 5vh;
+}
+:where(.card, .f6card1) p {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #5e5e5e;
+}
+:where(.card, .f6card1) span {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #753ed6;
+}
+/*********************  Наши работы  ***********************/
+.card2 .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.card2 .darkk {
+	position: relative;
+}
+.card2 img {
+	width: 485px;
+	height: 460px;
+	filter: brightness(50%);
+}
+/* .card2 .darkk::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+/*еще один способ затемнения с помощью ::before*/
+.card2 .darkk span {
+	position: absolute;
+	width: 100%;
+	bottom: 9%;
+	left: 7%;
+	color: #fff;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.work {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	padding: 1% 10.3%;
+	background: #65256f;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+.work1 {
+	display: flex;
+}
+/******************  Производство  ******************/
+.card3 .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2%;
+}
+/******************  Наш прайс  ******************/
+.card4 .container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2%;
+}
+.subcard4 {
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0;
+}
+.subcard4 div p {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #5a5858;
+	width: 268px;
+}
+.subcard4 div span {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	color: #4c1f8c;
+}
+.subcard4 > div > img {
+	width: 350px;
+	height: 470px;
+}
+.card3 img {
+	width: 485px;
+	height: 460px;
+}
+/******************  Наши клиенты  *****************/
+:where(.card5, .f6card4) .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 2%;
+}
+/****************  Наша команда  *****************/
+.card6 .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 7%;
+	gap: 2%;
+}
+.card6 .container p {
+	text-align: start;
+	margin-top: 3%;
+}
+.card6 img {
+	width: 475px;
+	margin-bottom: 1%;
+}
+.card6 .psize {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+}
+.card6 .psize1 {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	color: #6f6c6c;
+}
+/*************Оставьте бесплатную заявку****************/
+:where(.f6card4, .card6, .f1card2) p {
+	text-align: center;
+}
+:where(.f6card4, .card6, .f1card2) .zayavka {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 38px;
+	color: #343434;
+	margin-bottom: 1%;
+}
+:where(.f6card4, .card6, .f1card2) .zayavka1 {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #585858;
+	margin-bottom: 3%;
+}
+/**************Оставьте бесплатную заявку***************/
+form .submit {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	background: #65256f;
+	border: none;
+	border-radius: 3px;
+	padding: 0.6% 10%;
+	color: #fff;
+	margin-left: 5%;
+}
+form {
+	background: #fffcfc;
+	box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.05);
+	margin: 0 auto;
+	padding: 10px 20px;
+	width: 70%;
+	border-radius: 3px;
+}
+:where(.f6card4, .card6, .f1card2) form input {
+	margin-left: 20px;
+	background: #ece8e8;
+	border: none;
+	padding: 1% 4%;
+	border-radius: 3px;
+	width: 30%;
+}
+/********************  Footer  **********************/
+footer {
+	background: #3a3a3a;
+	padding-bottom: 5%;
+	padding-top: 3%;
+}
+footer .container {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	gap: 8%;
+}
+footer .container div {
+	display: flex;
+	flex-direction: column;
+	gap: 2%;
+}
+footer .fl1 {
+	flex: 2;
+}
+footer .fl2 {
+	flex: 1;
+}
+footer .fl3 {
+	flex: 2;
+}
+footer {
+	flex: 1;
+}
+footer h5 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+}
+footer .container p,
+li {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 150%;
+	color: #bcbbbb;
+}
+footer .container li {
+	list-style: none;
+}
+footer .container a:hover {
+	color: #f469d6;
+}
+footer a {
+	color: #bcbbbb;
+}
+/**********************************************************************/
+/***********************         FRAME 1 - Услуги      ************************/
+/**********************************************************************/
+.f1card1 .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.recRow {
+	display: flex;
+	margin: 1.7% 0;
+}
+.rec1,
+.rec3 {
+	margin-bottom: 4.5%;
+}
+.rec6 {
+	margin-right: 2%;
+}
+:where(.f1card1, .f8, .f9card2) div {
+	position: relative;
+}
+:where(.f1card1, .f8, .f9card2) span {
+	position: absolute;
+	width: 100%;
+	bottom: 9%;
+	left: 0;
+	color: #fff;
+	font-size: 38px;
+	font-weight: 400;
+	text-align: center;
+}
+/*******************  Наши преимущества  *********************/
+/************** line *************/
+.linef1 {
+	position: relative;
+	text-align: center;
+	margin: 3% 0;
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+}
+.linef1::before {
+	content: "";
+	width: 36%;
+	height: 2px;
+	background: #bebebe;
+	position: absolute;
+	bottom: 45%;
+	left: 0;
+}
+.linef1::after {
+	content: "";
+	width: 36%;
+	height: 2px;
+	background: #bebebe;
+	position: absolute;
+	bottom: 45%;
+	right: 0;
+}
+/***********************************/
+:where(.f1card2, .f6card3) .container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 3%;
+	margin-bottom: 4%;
+}
+:where(.f1card2, .f6card3) .container div {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+:where(.f1card2, .f6card3) .container p {
+	text-align: center;
+	color: #000;
+	font-weight: 400;
+	font-size: 18px;
+}
+:where(.f1card2, .f6card3) .container img {
+	margin: 0 auto;
+}
+/***********************         FRAME 6 - О нас      ************************/
+.f6card1 .container img {
+	width: 100%;
+}
+.f6card1 .container p {
+	text-align: center;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0.01em;
+	color: #4c4c54;
+}
+.f6card1 .container {
+	margin-bottom: 4%;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
+/*************************************/
+.f6card2 {
+	background: url("../img/frame6/forest.png") center / cover no-repeat;
+	position: relative;
+	width: 100%;
+	height: 80vh;
+}
+.f6 {
+	background: rgba(0, 0, 0, 0.503);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.f6card2 .f6header {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 8%;
+	margin-top: 3%;
+}
+/***************************/
+.f6card2 .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 4%;
+	height: 100%;
+}
+.elips {
+	background: url("../img/frame6/Ellipse\ 1.png") no-repeat;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	left: 3%;
+}
+.elips span {
+	font-size: 22px;
+	font-weight: 500;
+	position: absolute;
+	top: 4%;
+	left: 12%;
+}
+.elips p {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+	color: #ffffff;
+	position: absolute;
+	top: 15%;
+	right: 30%;
+	left: -20%;
+}
+.f6card2 .f6img {
+	display: flex;
+	gap: 30%;
+	position: absolute;
+	bottom: 20%;
+	left: 48%;
+}
+.f6Elips .imgArrow {
+	width: 100%;
+	position: relative;
+}
+.f6ellipsArrow1 {
+	position: absolute;
+	top: 40%;
+	left: 3%;
+}
+.f6ellipsArrow2 {
+	position: absolute;
+	top: 40%;
+	right: 3%;
+}
+.f6rightArrow {
+	position: absolute;
+	top: 44%;
+	right: 4.7%;
+}
+.f6leftArrow {
+	position: absolute;
+	top: 44%;
+	left: 4.7%;
+}
+/***********************       FRAME 7 - Контакты   ************************/
+.f7card1 .container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.f7card1 .leftf7 {
+	display: flex;
+	flex-direction: column;
+	gap: 5%;
+}
+.leftf7 .contact {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+}
+.l11 {
+	display: flex;
+}
+.l1 p {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 118.5%;
+	letter-spacing: 0.01em;
+	color: #000000;
+	margin-left: 10%;
+	margin-top: 3%;
+}
+.l1 .l111 {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 118.5%;
+	letter-spacing: 0.01em;
+	color: #a4a4a4;
+	margin-left: 3%;
+	margin-top: 0;
+}
+/***********************         FRAME 8 - Портфолио     ************************/
+.f8 .container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3%;
+}
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.left-1 {
+	display: flex;
+	justify-content: space-between;
+}
+.left-2 {
+	margin: 2% 0;
+}
+.right-1 {
+	display: flex;
+	justify-content: space-between;
+}
+.right-2 {
+	margin: 2% 0;
+}
+/*********************/
+.f8 span {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: start;
+	text-indent: 5%;
+	bottom: 30px;
+}
+/************ затемнение ************/
+.f8dark1,
+.f8dark2 {
+	width: 100%;
+	filter: brightness(50%);
+}
+/***********************  FRAME 9 - Производство  ************************/
+.f9card1 .container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4%;
+}
+.f9card2 {
+	margin-bottom: 4%;
+}
+.f9card2 .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.f9card2 p {
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 0.055em;
+	color: #000000;
+	padding: 0 1%;
+	margin-bottom: 6%;
+}
+.f9card2 span {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 28px;
+	color: #ffffff;
+}
+.f9card2 .imgArrow {
+	width: 100%;
+	position: relative;
+}
+.ellipsArrow1 {
+	position: absolute;
+	top: 40%;
+	left: 0;
+}
+.ellipsArrow2 {
+	position: absolute;
+	top: 40%;
+	right: 0;
+}
+.rightArrow {
+	position: absolute;
+	top: 47.2%;
+	right: 2.2%;
+}
+.leftArrow {
+	position: absolute;
+	top: 47.2%;
+	left: 2%;
+}
